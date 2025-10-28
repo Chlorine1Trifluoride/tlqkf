@@ -12,9 +12,9 @@ def download():
         return subprocess.Popen(['gh', 'release', 'download', '--repo', 'Chlorine1Trifluoride/UbuntuSetUp', '--pattern', f'CFD SIMULATOR.7z.{'0'*(3-len(number))}{number}', '--dir', directory], cwd=directory, shell=True)
     process = []
     for i in range(1, 80, 12):
-        batch = range(i, i+12)
+        batch = list(range(i, i+12))
         for n in batch:
-            p = get(i)
+            p = get(n)
             process.append(p)
         for p in process: p.wait()
         process.clear()
