@@ -14,7 +14,7 @@ strlist = ('G','H','O','L','Y','A','E','U','R','W','D',' ', '[', ']')
 numlist = ( 11, 4, 2, 7, 11, 5, 8, 6, 11, 0, 5, 4, 11 )
 #               Y  O  U      A  R  E      G  A  Y
 #subprocess.run('clear')
-pr=colorama.Fore.LIGHTGREEN_EX+''
+pr=colorama.Fore.YELLOW +''
 for i in range(25):
     time.sleep(0.01)
     pr+= '='
@@ -30,13 +30,13 @@ for i in numlist:
             print( pr + letter, end='\r')
             time.sleep(0.03)
         pr +=strlist[i]
-pr+=colorama.Fore.LIGHTGREEN_EX+']'
+pr+=colorama.Fore.YELLOW + ']'
 print(pr, end='\r')
 for i in range(0,25):
     time.sleep(0.01)
     pr+= '='
     print(pr, end='\r')
-print(colorama.Fore.LIGHTCYAN_EX + '\n \n \n                           뭘 봐 게이야 \n \n' + colorama.Fore.LIGHTGREEN_EX)
+print(colorama.Fore.LIGHTCYAN_EX + '\n \n \n                           뭘 봐 게이야 \n \n' + colorama.Fore.YELLOW)
 l=''
 for i in range(65):
     time.sleep(0.01)
