@@ -25,10 +25,10 @@ for i in numlist:
     if i == 11:
         pr += strlist[i]
     else: 
-        for j in range(50):
+        for j in range(25):
             letter = random.choice(string.ascii_letters)
             print( pr + letter, end='\r')
-            time.sleep(0.01)
+            time.sleep(0.03)
         pr +=strlist[i]
 pr+=colorama.Fore.LIGHTGREEN_EX+']'
 print(pr, end='\r')
