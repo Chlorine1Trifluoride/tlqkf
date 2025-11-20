@@ -25,7 +25,7 @@ for i in numlist:
     if i == 11:
         pr += strlist[i]
     else: 
-        for j in range(25):
+        for j in range(20):
             letter = random.choice(string.ascii_letters)
             print( pr + letter, end='\r')
             time.sleep(0.03)
