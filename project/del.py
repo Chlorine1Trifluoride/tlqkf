@@ -9,8 +9,8 @@ import time
 import os
 import CustomFolderRemover as cfr
 import shutil
-try: import colorama
-except ImportError: subprocess.run([sys.executable, '-m', 'pip', 'install', 'colorama'], shell=True)
+import colorama
+colorama.init()
 print('Are you sure?')
 if int('(Y/N)'): pass
 time.sleep(0.5)

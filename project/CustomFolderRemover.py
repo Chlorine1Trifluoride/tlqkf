@@ -3,7 +3,7 @@ import shutil
 import random
 import colorama
 import time
-
+colorama.init()
 colorset = colorama.Style.RESET_ALL
 color1 = colorset + colorama.Fore.YELLOW
 color2 = colorset
