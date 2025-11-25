@@ -11,13 +11,10 @@ import CustomFolderRemover as cfr
 import shutil
 try: import colorama
 except ImportError: subprocess.run([sys.executable, '-m', 'pip', 'install', 'colorama'], shell=True)
-
-#if os.name == 'nt':
-time.sleep(0.3)
-print(colorama.Fore.GREEN + colorama.Back.BLACK + colorama.Style.DIM + 'Please wait. Process starting... \r')
+print('Are you sure?')
+if int('(Y/N)'): pass
 time.sleep(0.5)
-print(colorama.Style.RESET_ALL)
-#else: print("뭐야.... 윈도우에서 다시 실행하세요")          
+
 
 def timer(t) : 
     time.sleep(t)
