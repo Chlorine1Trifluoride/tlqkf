@@ -12,7 +12,7 @@ import shutil
 import colorama
 colorama.init()
 print('Are you sure?')
-if int('(Y/N)'): pass
+if input('(Y/N): '): pass
 time.sleep(0.5)
 
 
